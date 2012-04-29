@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">This is the main activity, and not a fragment!</string>
+    <string name="app_name">Fragments Testing</string>
+    
+    <string name="fragment_1">This is fragment 1! It was created without XML!</string>
+    	<string name="f1_button1_text">Start an AsyncTask!</string>
+    
+    <string name="fragment_2">This is fragment 2! It was added using XML!</string>
+
+</resources>
