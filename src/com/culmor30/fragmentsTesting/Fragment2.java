@@ -13,6 +13,7 @@ public class Fragment2 extends Fragment {
 		Bundle args = new Bundle();
 		args.putInt("index", index);
 		f.setArguments(args);
+		f.setRetainInstance(true);
 		
 		return f;
 	}

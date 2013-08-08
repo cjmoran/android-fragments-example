@@ -24,10 +24,11 @@ public class FragmentsTestingActivity extends FragmentActivity{
         setContentView(R.layout.main);
         
         //Add fragment 1 without XML
-        FragmentManager fragmentManager = getSupportFragmentManager();	//"support" because support libraries
+        FragmentManager fragmentManager = getSupportFragmentManager();	//"support" because we're using the support libraries
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         
         Fragment1 fragment1 = Fragment1.newInstance(FRAGMENT_1);
+        fragment1.setRetainInstance(true);
         fragmentTransaction.add(R.id.main_viewgroup, fragment1);
         fragmentTransaction.commit();
 	}
