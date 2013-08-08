@@ -20,8 +20,7 @@ public class AsyncTask1 extends AsyncTask<Void, Integer, String> {
 	@Override
 	protected void onPreExecute() {
 		interrupted = false;
-		ProgressDialogFragment pdf = new ProgressDialogFragment();
-		pdf.show(fmgr, "DIALOG_F1");
+		new ProgressDialogFragment().show(fmgr, "DIALOG_F1");
 	}
 	
 	@Override
